@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="246343dd-3a1a-4951-9295-fb8036deb5b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fs_common.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fs_common.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
