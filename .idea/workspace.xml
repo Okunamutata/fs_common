@@ -5,13 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="246343dd-3a1a-4951-9295-fb8036deb5b5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/fs_common.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fs_common.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/extensions.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mvmt/data/models/movement_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mvmt/data/models/mvmt_history.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mvmt/domain/entities/movement_entity.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mvmt/mvmt_lib.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utilities.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,15 +51,21 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/tobennaokunna/StudioProjects/fs_common/lib",
+    "last_opened_file_path": "/Users/tobennaokunna/StudioProjects/fs_common/lib/mvmt/domain/entities",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/mvmt/domain/entities" />
+      <recent name="$PROJECT_DIR$/lib/mvmt/data" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/mvmt" />
+      <recent name="$PROJECT_DIR$/lib/mvmt/core" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
