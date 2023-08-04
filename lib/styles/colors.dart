@@ -4,8 +4,6 @@ import 'package:fs_common/styles/hex_color_adapter.dart';
 
 /// {@category Core}
 class FitStitchColors {
-  static const Color pu = Color(0xffFF46AA);
-
   static const Color Pink = Color(0xffFF46AA);
   static const Color Green = Color(0xff00DC7D);
   static const Color DarkPurple = Color(0xff5200FF);

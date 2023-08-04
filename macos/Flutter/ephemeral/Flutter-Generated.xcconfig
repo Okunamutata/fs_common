@@ -1,6 +1,6 @@
 // This is a generated file; do not edit or check into version control.
 FLUTTER_ROOT=/Users/tobennaokunna/development/flutter
-FLUTTER_APPLICATION_PATH=/Users/tobennaokunna/StudioProjects/movement_bloc/fs_common
+FLUTTER_APPLICATION_PATH=/Users/tobennaokunna/StudioProjects/fs_common
 COCOAPODS_PARALLEL_CODE_SIGN=true
 FLUTTER_BUILD_DIR=build
 FLUTTER_BUILD_NAME=0.0.1
