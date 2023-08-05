@@ -1,5 +1,13 @@
 library fit_stitch_mvmt;
 
-export 'data/models/movement_model.dart';
-export 'data/models/mvmt_history.dart';
-export 'domain/entities/movement_entity.dart';
+import 'dart:convert';
+import 'dart:developer';
+
+import 'package:fs_common/extensions.dart';
+import 'package:fs_common/utilities.dart';
+
+part 'mvmt_history.dart';
+
+part 'movement_model.dart';
+
+part 'movement_entity.dart';

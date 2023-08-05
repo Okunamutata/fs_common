@@ -1,7 +1,7 @@
-import 'dart:convert';
-import 'dart:developer';
 
-import 'package:fs_common/utilities.dart';
+
+
+part of 'mvmt_lib.dart' ;
 
 
 class MvmtHistoryModel {

@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:fs_common/styles/hex_color_adapter.dart';
+
+part of 'styles.dart';
 
 /// {@category Core}
 class FitStitchColors {

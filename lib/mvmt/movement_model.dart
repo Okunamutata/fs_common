@@ -1,6 +1,4 @@
-import 'package:fs_common/extensions.dart';
-import 'package:fs_common/mvmt/domain/entities/movement_entity.dart';
-import 'package:fs_common/utilities.dart';
+part of 'mvmt_lib.dart';
 
 class MovementModel extends MovementEntity {
   MovementModel({

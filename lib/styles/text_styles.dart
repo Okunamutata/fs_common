@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
-import 'package:fs_common/styles/colors.dart';
 
+part of 'styles.dart';
 final TextStyle hugeTitle = _hugeTitle();
 
 final TextStyle largeTitle = _largeTitle();

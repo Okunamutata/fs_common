@@ -1,3 +1,5 @@
+part of 'mvmt_lib.dart' ;
+
 class MovementEntity {
   MovementEntity({
     required this.instructions,

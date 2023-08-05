@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart' show Color;
+part of 'styles.dart';
 
 extension HexColor on Color {
   /// String is in the format "aabbcc" or "ffaabbcc" with an optional leading "#".
