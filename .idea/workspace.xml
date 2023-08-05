@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="246343dd-3a1a-4951-9295-fb8036deb5b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/user/mvmt_user_entity.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/user/mvmt_user_lib.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/user/mvmt_user_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/user/user_handler.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/workout/exercise_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/workout/set_entity.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/workout/set_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/workout/training_utils.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/workout/workout_entity.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/workout/workout_lib.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/workout/workout_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mvmt/data/models/movement_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mvmt/movement_model.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mvmt/data/models/mvmt_history.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mvmt/mvmt_history.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mvmt/domain/entities/movement_entity.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mvmt/movement_entity.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mvmt/mvmt_lib.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mvmt/mvmt_lib.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/constants.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/constants.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/fs_common.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/fs_common.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mvmt/movement_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mvmt/movement_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/styles/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/styles/colors.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/styles/hex_color_adapter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/styles/hex_color_adapter.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/styles/styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/styles/styles.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/styles/text_styles.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/styles/text_styles.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +60,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/tobennaokunna/StudioProjects/fs_common/lib/mvmt/domain/entities",
+    "last_opened_file_path": "/Users/tobennaokunna/StudioProjects/fs_common/lib/user",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/user" />
+      <recent name="$PROJECT_DIR$/lib/workout" />
       <recent name="$PROJECT_DIR$/lib/mvmt/domain/entities" />
       <recent name="$PROJECT_DIR$/lib/mvmt/data" />
       <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/mvmt" />

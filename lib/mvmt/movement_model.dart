@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 part of 'mvmt_lib.dart';
 
 class MovementModel extends MovementEntity {

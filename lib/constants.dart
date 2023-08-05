@@ -1,3 +1,7 @@
+// ignore_for_file: constant_identifier_names
+
+library fs_constants;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
