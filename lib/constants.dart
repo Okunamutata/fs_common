@@ -161,6 +161,7 @@ enum Category {
   const Category({required this.title});
 }
 
+
 enum Muscles {
   abdominals(
       title: 'Abdominals',
