@@ -6,7 +6,7 @@ class ExerciseModel {
 
   final String uid;
   final MovementModel mvmt;
-  final List<SetModel> sets;
+  List<SetModel> sets;
 
   factory ExerciseModel.fromJson(Map<String, dynamic> json) {
     return ExerciseModel(
