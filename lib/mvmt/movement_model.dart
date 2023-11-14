@@ -67,6 +67,7 @@ class MovementModel extends MovementEntity {
       seedImages: Utils.formatSeedPhoto(seedImages, json['name'] ?? ''),
       instructions: forcedCast<List<String>>(json['instructions'], <String>[]),
     );
+    
   }
 
   Map<String, dynamic> toJson() {
