@@ -59,13 +59,13 @@ class MovementModel extends MovementEntity {
           DateTime.tryParse(json['date_created'] ?? ''), DateTime(2022, 07)),
       uid: json['uid'] ?? 'none',
       benefit: forcedCast(json['benefit'], ''),
-      tags: json['tags'].cast<String>() ?? <String>[],
+      tags: forcedCast<List<String>>(json['tags'], <String>[]),
       skillLevel: forcedCast(json['skill_level'], 1),
-      muscles: forcedCast(json['muscles'].cast<String>(), <String>[]),
+      muscles: forcedCast(json['muscles'], <String>[]),
       category: forcedCast(json['category'], ''),
-      equipment: forcedCast(json['equipment'].cast<String>(), <String>[]),
+      equipment: forcedCast(json['equipment'], <String>[]),
       seedImages: Utils.formatSeedPhoto(seedImages, json['name'] ?? ''),
-      instructions: json['instructions'].cast<String>() ?? <String>[],
+      instructions: forcedCast<List<String>>(json['instructions'], <String>[]),
     );
   }
 
