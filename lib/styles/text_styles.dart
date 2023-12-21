@@ -299,7 +299,7 @@ TextStyle _baseTextStyle(
   double? letterSpacing,
   Color color = MvmtDarkTheme.white,
   TextDecoration? decoration,
-  String fontFamily = 'Jost',
+  String fontFamily = 'SpaceMono',
 }) {
   return TextStyle(
     fontFamily: fontFamily,
