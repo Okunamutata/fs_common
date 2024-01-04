@@ -94,7 +94,7 @@ ThemeData getThemeData() {
     ),
     brightness: Brightness.dark,
     splashColor: FitStitchColors.Yellow,
-
+buttonBarTheme: ButtonBarThemeData(),
     canvasColor: MvmtDarkTheme.background,
     primaryColor: MvmtDarkTheme.brand,
     textTheme: TextTheme(

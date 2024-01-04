@@ -279,6 +279,7 @@ TextStyle _body3Bold({Color color = MvmtDarkTheme.white}) {
     12,
     FontWeight.w600,
     color: color,
+
   );
 }
 
@@ -299,6 +300,7 @@ TextStyle _baseTextStyle(
   double? letterSpacing,
   Color color = MvmtDarkTheme.white,
   TextDecoration? decoration,
+      //Jost
   String fontFamily = 'SpaceMono',
 }) {
   return TextStyle(
