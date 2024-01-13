@@ -9,17 +9,28 @@ class UserHandler {
       case 'free':
         return UserTier.free;
 
-      case 'supporter':
-        return UserTier.supporter;
-
-      case 'subscribers':
-        return UserTier.subscribers;
-
-      case 'producer':
-        return UserTier.producer;
+      case 'premium':
+        return UserTier.premium;
 
       default:
         return UserTier.free;
+    }
+  }
+
+  static UserStatus parseUserStatus(Map<String, dynamic> json) {
+    final String data = json[MvmtUserKeys.userStatus.key] ?? '';
+    switch (data) {
+      case 'active':
+        return UserStatus.active;
+
+      case 'investigate':
+        return UserStatus.investigate;
+
+      case 'banned':
+        return UserStatus.banned;
+
+      default:
+        return UserStatus.investigate;
     }
   }
 
@@ -41,7 +52,6 @@ class UserHandler {
         return Pronouns.unknown;
     }
   }
-
 }
 
 enum Pronouns {

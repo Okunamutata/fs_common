@@ -24,8 +24,10 @@ class UserEntity {
       required this.about,
       required this.followers,
       required this.following,
+        required this.userStatus,
       required this.workouts});
 
+  final UserStatus userStatus;
   final int views;
   final UserTier userTier;
   final String about;

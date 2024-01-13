@@ -16,6 +16,7 @@ class MvmtUserModel extends UserEntity {
       required super.userTier,
       required super.lastUpdated,
       required super.imageUrl,
+      UserStatus userStatus = UserStatus.active,
       List<String>? interests,
       List<String>? mvmts,
       required super.about,
@@ -27,6 +28,7 @@ class MvmtUserModel extends UserEntity {
       Map<String, String>? workoutHistory,
       List<String>? workouts})
       : super(
+            userStatus: userStatus,
             views: views ?? -1,
             workoutHistory: workoutHistory ?? <String, String>{},
             mvmts: mvmts ?? <String>[],
@@ -74,10 +76,14 @@ class MvmtUserModel extends UserEntity {
         following: (json[MvmtUserKeys.following.key] as List<dynamic>)
             .map((dynamic str) => str as String)
             .toList(),
-        followers:
-            (json[MvmtUserKeys.followers.key] as List<dynamic>).map((dynamic str) => str as String).toList(),
-        workouts: (json['workouts'] as List<dynamic>).map((dynamic str) => str as String).toList(),
-        hide: forcedCast(json[MvmtUserKeys.hide.key], false));
+        followers: (json[MvmtUserKeys.followers.key] as List<dynamic>)
+            .map((dynamic str) => str as String)
+            .toList(),
+        workouts: (json['workouts'] as List<dynamic>)
+            .map((dynamic str) => str as String)
+            .toList(),
+        hide: forcedCast(json[MvmtUserKeys.hide.key], false),
+        userStatus: UserHandler.parseUserStatus(json));
   }
 
   Map<String, dynamic> toJson() => <String, dynamic>{
@@ -90,6 +96,7 @@ class MvmtUserModel extends UserEntity {
         MvmtUserKeys.paid_subscribers.key: paidSubscribers,
         MvmtUserKeys.paid_subscriptions.key: paidSubscriptions,
         MvmtUserKeys.userTier.key: userTier.name,
+        MvmtUserKeys.userStatus.key: userStatus.name,
         'about': about,
         'pronoun': pronoun.key,
         'date_joined': dateJoined.toIso8601String(),
@@ -107,6 +114,7 @@ class MvmtUserModel extends UserEntity {
 }
 
 enum MvmtUserKeys {
+  userStatus('user_status'),
   workouts('workouts'),
   paid_subscribers('paid_subscribers'),
   paid_subscriptions('paid_subscriptions'),
@@ -135,4 +143,6 @@ enum MvmtUserKeys {
   const MvmtUserKeys(this.key);
 }
 
-enum UserTier { producer, subscribers, supporter, free }
+enum UserTier { premium, free }
+
+enum UserStatus { active, banned, investigate }
