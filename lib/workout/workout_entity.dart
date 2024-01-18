@@ -42,4 +42,4 @@ class WorkoutEntity {
 }
 
 // ignore: constant_identifier_names
-enum WorkoutVisibilityStatus { public, private, subscriptions_only }
+enum WorkoutVisibilityStatus { public, private, subscriptions_only, }

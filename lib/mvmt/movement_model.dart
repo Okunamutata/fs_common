@@ -21,9 +21,10 @@ class MovementModel extends MovementEntity {
     required super.seedImages,
     required super.unlisted,
     required super.equipment,
+    MvmtVisibilityStatus visibilityStatus = MvmtVisibilityStatus.public,
     super.proVideoUrl,
     int? views,
-  }) : super(views: views ?? -1);
+  }) : super(views: views ?? -1, visibilityStatus: visibilityStatus);
 
   factory MovementModel.fromJson(Map<String, dynamic> json) {
     List<String> seedImages = <String>[];
@@ -47,6 +48,8 @@ class MovementModel extends MovementEntity {
     return MovementModel(
       title: title,
       proVideoUrl: json['pro_video_url'] ?? '',
+      visibilityStatus: parseVisibility(json['visibility_status'] as String),
+
       views: forcedCast<int>(json[MovementModelKeys.views.key], -1),
       // 'https://firebasestorage.googleapis.com/v0/b/mvmt-ec98a.appspot.com/o/pro_videos%2Ftest%2Fbody_weight_squat.MOV?alt=media&token=33c7ab1a-a8b7-43d0-9576-27673dcd9672',
       unlisted: forcedCast(json['unlisted'], false),
@@ -69,11 +72,35 @@ class MovementModel extends MovementEntity {
     );
   }
 
+  static MvmtVisibilityStatus parseVisibility(String visibility) {
+    switch (visibility) {
+      case 'admin_block':
+        {
+          return MvmtVisibilityStatus.admin_block;
+        }
+
+      case 'admin_review':
+        {
+          return MvmtVisibilityStatus.admin_review;
+        }
+      case 'private':
+        {
+          return MvmtVisibilityStatus.private;
+        }
+      case 'public':
+      default:
+        {
+          return MvmtVisibilityStatus.public;
+        }
+    }
+  }
+
   Map<String, dynamic> toJson() {
     return <String, dynamic>{
       'name': name, //the '-' separated version of the name, less human readable
       'title': title, // the human readable 'pretty' name
       'uid': uid,
+      'visibility_status': visibilityStatus.name,
       'benefit': benefit,
       'creator_url': creatorUrl,
       'creator_uid': creatorUid,
@@ -113,3 +140,5 @@ enum MovementModelKeys {
 
   const MovementModelKeys({required this.key});
 }
+
+enum MvmtVisibilityStatus { public, private, admin_block, admin_review }

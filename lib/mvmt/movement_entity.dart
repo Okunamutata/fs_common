@@ -21,7 +21,10 @@ class MovementEntity {
     this.unlisted = false,
     this.proVideoUrl = '',
     required this.images,
+    required this.visibilityStatus,
   });
+
+  final MvmtVisibilityStatus visibilityStatus;
 
   final int views;
   final bool unlisted;
