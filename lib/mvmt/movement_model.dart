@@ -48,7 +48,7 @@ class MovementModel extends MovementEntity {
     return MovementModel(
       title: title,
       proVideoUrl: json['pro_video_url'] ?? '',
-      visibilityStatus: parseVisibility(json['visibility_status'] as String),
+      visibilityStatus: parseVisibility( forcedCast<String>(json['visibility_status'], '')),
 
       views: forcedCast<int>(json[MovementModelKeys.views.key], -1),
       // 'https://firebasestorage.googleapis.com/v0/b/mvmt-ec98a.appspot.com/o/pro_videos%2Ftest%2Fbody_weight_squat.MOV?alt=media&token=33c7ab1a-a8b7-43d0-9576-27673dcd9672',
