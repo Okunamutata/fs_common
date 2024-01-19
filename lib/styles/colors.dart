@@ -90,7 +90,9 @@ ThemeData getThemeData() {
   return ThemeData(
     dialogBackgroundColor: MvmtDarkTheme.backgroundAlt,
     appBarTheme: const AppBarTheme(
-      systemOverlayStyle: SystemUiOverlayStyle.light, // 2
+      systemOverlayStyle: SystemUiOverlayStyle.light, //
+        surfaceTintColor: Colors.transparent
+      // 2
     ),
     brightness: Brightness.dark,
     splashColor: FitStitchColors.Yellow,
