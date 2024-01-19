@@ -17,6 +17,31 @@ class UserHandler {
     }
   }
 
+  static UserVisibilityStatus parseVisibility(Map<String, dynamic> json) {
+    final String visibility = json[MvmtUserKeys.userVisibility.key] ?? '';
+
+    switch (visibility) {
+      case 'admin_block':
+        {
+          return UserVisibilityStatus.admin_block;
+        }
+
+      case 'admin_review':
+        {
+          return UserVisibilityStatus.admin_review;
+        }
+      case 'private':
+        {
+          return UserVisibilityStatus.private;
+        }
+      case 'public':
+      default:
+        {
+          return UserVisibilityStatus.public;
+        }
+    }
+  }
+
   static UserStatus parseUserStatus(Map<String, dynamic> json) {
     final String data = json[MvmtUserKeys.userStatus.key] ?? '';
     switch (data) {

@@ -23,11 +23,13 @@ class MvmtUserModel extends UserEntity {
       required super.searchOptions,
       required super.hide,
       required super.pronoun,
+      UserVisibilityStatus visibilityStatus = UserVisibilityStatus.public,
       List<String>? followers,
       List<String>? following,
       Map<String, String>? workoutHistory,
       List<String>? workouts})
       : super(
+            visibilityStatus: visibilityStatus,
             userStatus: userStatus,
             views: views ?? -1,
             workoutHistory: workoutHistory ?? <String, String>{},
@@ -49,6 +51,7 @@ class MvmtUserModel extends UserEntity {
             json[MvmtUserKeys.paid_subscriptions.key], <String>[]),
         uid: json['uid'] ?? '',
         about: json['about'] ?? '',
+        visibilityStatus: UserHandler.parseVisibility(json),
         userTier: UserHandler.parseUserTier(json),
         pronoun: UserHandler.parsePronoun(json),
         workoutHistory: forcedCast<Map<String, String>>(
@@ -90,6 +93,7 @@ class MvmtUserModel extends UserEntity {
         'display_name': displayName,
         'email': email,
         'uid': uid,
+        MvmtUserKeys.userVisibility.key: visibilityStatus.name,
         MvmtUserKeys.views.key: views,
         MvmtUserKeys.search_options.key: searchOptions,
         MvmtUserKeys.hide.key: hide,
@@ -126,6 +130,7 @@ enum MvmtUserKeys {
   lastUpdated('last_updated'),
   views('views'),
   userTier('user_tier'),
+  userVisibility('user_visibility'),
   workout_history('workout_history'),
   interests('interests'),
   favorite_movements('favorite_movements'),
@@ -146,3 +151,5 @@ enum MvmtUserKeys {
 enum UserTier { premium, free }
 
 enum UserStatus { active, banned, investigate }
+
+enum UserVisibilityStatus { public, private, admin_block, admin_review }

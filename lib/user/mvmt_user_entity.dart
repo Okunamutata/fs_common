@@ -1,6 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
 part of 'mvmt_user_lib.dart';
+
 class UserEntity {
   UserEntity(
       {required this.displayName,
@@ -24,9 +25,11 @@ class UserEntity {
       required this.about,
       required this.followers,
       required this.following,
-        required this.userStatus,
+        required this.visibilityStatus,
+      required this.userStatus,
       required this.workouts});
 
+  final UserVisibilityStatus visibilityStatus;
   final UserStatus userStatus;
   final int views;
   final UserTier userTier;
@@ -51,5 +54,3 @@ class UserEntity {
   final List<String> paidSubscriptions;
   final bool hide;
 }
-
-
