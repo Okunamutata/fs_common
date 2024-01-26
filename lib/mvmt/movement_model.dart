@@ -97,31 +97,38 @@ class MovementModel extends MovementEntity {
 
   Map<String, dynamic> toJson() {
     return <String, dynamic>{
-      'name': name, //the '-' separated version of the name, less human readable
-      'title': title, // the human readable 'pretty' name
-      'uid': uid,
-      'visibility_status': visibilityStatus.name,
-      'benefit': benefit,
-      'creator_url': creatorUrl,
-      'creator_uid': creatorUid,
-      'creator_name': creatorName,
-      'unlisted': unlisted,
-      'seed_images': seedImages,
-      'pro_video_url': proVideoUrl,
+      MovementModelKeys.name.key: name, //the '-' separated version of the name, less human readable
+      MovementModelKeys.title.key: title, // the human readable 'pretty' name
+      MovementModelKeys.uid.key: uid,
+      MovementModelKeys.visibilityStatus.key: visibilityStatus.name,
+      MovementModelKeys.benefit.key: benefit,
+      MovementModelKeys.creatorUrl.key: creatorUrl,
+      MovementModelKeys.creatorUid.key: creatorUid,
+      MovementModelKeys.creatorName.key: creatorName,
+      MovementModelKeys.unlisted.key: unlisted,
+      MovementModelKeys.seedImage.key: seedImages,
+      MovementModelKeys.proVideoUrl.key: proVideoUrl,
       MovementModelKeys.views.key: views,
-      'muscles': muscles,
-      'equipment': equipment,
-      'skill_level': skillLevel,
-      'images': images,
-      'instructions': instructions,
-      'tags': tags,
-      'category': category,
-      'date_created': dateCreated.toIso8601String()
+      MovementModelKeys.muscles.key: muscles,
+      MovementModelKeys.equipment.key: equipment,
+      MovementModelKeys.skill_level.key: skillLevel,
+      MovementModelKeys.images.key: images,
+      MovementModelKeys.instructions.key: instructions,
+      MovementModelKeys.tags.key: tags,
+      MovementModelKeys.category.key: category,
+      MovementModelKeys.dateCreated.key: dateCreated.toIso8601String()
     };
   }
 }
 
 enum MovementModelKeys {
+  images(key: 'images'),
+  unlisted(key: 'unlisted'),
+  creatorName(key: 'creator_name'),
+  creatorUid(key: 'creator_uid'),
+  creatorUrl(key:'creator_url' ),
+  seedImage(key: 'seed_images'),
+  visibilityStatus(key: 'visibility_status'),
   benefit(key: 'benefit'),
   dateCreated(key: 'date_created'),
   category(key: 'category'),
