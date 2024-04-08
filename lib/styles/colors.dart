@@ -102,19 +102,19 @@ buttonBarTheme: ButtonBarThemeData(),
     textTheme: TextTheme(
       titleLarge: TextStyle(
         color: HexColor.fromHex('#333333'),
-        fontFamily: 'Jost',
+        fontFamily: 'SpaceMono',
       ),
       headlineSmall: TextStyle(
         color: HexColor.fromHex('#333333'),
-        fontFamily: 'Jost',
+        fontFamily: 'SpaceMono',
       ),
       bodyLarge: TextStyle(
         color: HexColor.fromHex('#333333'),
-        fontFamily: 'Jost',
+        fontFamily: 'SpaceMono',
       ),
       labelLarge: TextStyle(
         color: HexColor.fromHex('#333333'),
-        fontFamily: 'Jost',
+        fontFamily: 'SpaceMono',
       ),
     ),
   );

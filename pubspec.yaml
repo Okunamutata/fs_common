@@ -29,16 +29,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/icons/
-    - assets/exercises.json
-    - assets/exercises_images/
-    - assets/cta_images/
+    - assets/fonts/
     - assets/education/
-    - assets/body_parts/
     - assets/equipment/
-    - assets/brand/
     - assets/lottie/
-    - assets/tutorial/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -64,47 +58,3 @@ flutter:
           style: italic
         - asset: assets/fonts/SpaceMono-Regular.ttf
           weight: 600
-    - family: Jost
-      fonts:
-        - asset: assets/fonts/Jost-Black.ttf
-          weight: 700
-        - asset: assets/fonts/Jost-BlackItalic.ttf
-          style: italic
-        - asset: assets/fonts/Jost-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/Jost-BoldItalic.ttf
-          weight: 700
-          style: italic
-        - asset: assets/fonts/Jost-ExtraBold.ttf
-          weight: 800
-        - asset: assets/fonts/Jost-ExtraBoldItalic.ttf
-          weight: 800
-          style: italic
-        - asset: assets/fonts/Jost-ExtraLight.ttf
-          weight: 400
-        - asset: assets/fonts/Jost-ExtraLightItalic.ttf
-          weight: 400
-          style: italic
-        - asset: assets/fonts/Jost-Italic.ttf
-          style: italic
-        - asset: assets/fonts/Jost-Light.ttf
-          weight: 500
-        - asset: assets/fonts/Jost-LightItalic.ttf
-          weight: 500
-          style: italic
-        - asset: assets/fonts/Jost-Medium.ttf
-          weight: 600
-        - asset: assets/fonts/Jost-MediumItalic.ttf
-          weight: 600
-          style: italic
-        - asset: assets/fonts/Jost-Regular.ttf
-        - asset: assets/fonts/Jost-SemiBold.ttf
-          weight: 700
-        - asset: assets/fonts/Jost-SemiBoldItalic.ttf
-          weight: 700
-          style: italic
-        - asset: assets/fonts/Jost-Thin.ttf
-          weight: 300
-        - asset: assets/fonts/Jost-ThinItalic.ttf
-          weight: 300
-          style: italic

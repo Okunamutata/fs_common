@@ -255,22 +255,6 @@ enum Muscles {
   const Muscles({required this.title, required this.informationalUrl});
 }
 
-Map<WorkoutStickers, String> kWorkoutStickers = <WorkoutStickers, String>{
-  WorkoutStickers.fiveK: 'assets/icons/5k_sticker.png',
-  WorkoutStickers.beastMode: 'assets/icons/beast_mode_sticker.png',
-  WorkoutStickers.dontStop: 'assets/icons/dont_stop_sticker.png',
-  WorkoutStickers.equipment1: 'assets/icons/equipment_1_sticker.png',
-  WorkoutStickers.equipment2: 'assets/icons/equipment_2_sticker.png',
-  WorkoutStickers.letsGo: 'assets/icons/lets_go_sticker.png',
-  WorkoutStickers.musicPlayer: 'assets/icons/music_player_sticker.png',
-  WorkoutStickers.stayStrong1: 'assets/icons/stay_strong_sticker.png',
-  WorkoutStickers.stayStrong2: 'assets/icons/stay_strong_2_sticker.png',
-  WorkoutStickers.sweatSmile: 'assets/icons/sweat_and_smile_sticker.png',
-  WorkoutStickers.timeToWorkout: 'assets/icons/time_to_workout_sticker.png',
-  WorkoutStickers.workHard1: 'assets/icons/work_hard_sticker.png',
-  WorkoutStickers.workHard2: 'assets/icons/work_hard_2_sticker.png',
-  WorkoutStickers.yoga: 'assets/icons/yoga_equi_sticker.png'
-};
 
 const List<TextInputFormatter> kDefaultFormatters = <TextInputFormatter>[];
 
