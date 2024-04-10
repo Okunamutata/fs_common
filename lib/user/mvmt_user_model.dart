@@ -104,7 +104,7 @@ class MvmtUserModel extends UserEntity {
         'about': about,
         'pronoun': pronoun.key,
         'date_joined': dateJoined.toIso8601String(),
-        MvmtUserKeys.lastUpdated.key: lastUpdated.toIso8601String(),
+        MvmtUserKeys.lastUpdated.key: DateTime.now().toIso8601String(),
         'image_url': imageUrl,
         'favorite_workouts': favoriteWorkouts,
         'favorite_movements': favoriteMovements,
